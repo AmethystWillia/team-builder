@@ -1,7 +1,7 @@
 // Imports
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import axios from './Fake Axios';
+import axios from './Fake Axios/index';
 
 // Import components
 import Team from './Components/Team';
@@ -35,12 +35,14 @@ function App() {
       bday: formValues.bday,
       personality: formValues.personality,
       role: formValues.role,
-    }
+    };
 
     // "axios" post request
     axios.post('fakeapi.com', newMem)
       .then(res => {
-        console.log(res);
+        const submittedMem = res.data;
+        setMembers([submittedMem, ...members]);
+        setFormValues(initialFormValues);
       })
       .catch(err => {
         console.error(`Oops! ${err}`);
@@ -51,7 +53,7 @@ function App() {
   useEffect(() => {
     axios.get('fakeapi.com')
       .then(res => {
-        console.log(res);
+        setMembers(res.data);
       })
       .catch(err => {
         console.error(`Ruh roh! ${err}`);

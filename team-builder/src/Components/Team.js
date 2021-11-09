@@ -14,9 +14,11 @@ export default function Team(props) {
     // Render team member data
     return (
     <div className='member-container'>
-        <h2>Name:</h2>
-        <p>Email:</p>
-        <p>Role:</p>
+        <h2>Name: {details.name}</h2>
+        <h3>Role: {details.role}</h3>
+        <p>Personality: {details.personality}</p>
+        <p>Birthday: {details.bday}</p>
+        <p>Favorite Color: {details.favColor}</p>
     </div>
     )
 }
