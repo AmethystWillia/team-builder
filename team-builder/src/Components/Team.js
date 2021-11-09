@@ -1,6 +1,9 @@
 // Imports
 import React from 'react';
 
+// Import CSS
+import './Team.css'
+
 // Exporting default function
 export default function Team(props) {
     // Declare usable variables

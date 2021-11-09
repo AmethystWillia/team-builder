@@ -1,6 +1,9 @@
 // Imports
 import React from 'react';
 
+// Import CSS
+import './TeamForm.css'
+
 // Exporting default function
 export default function TeamForm(props) {
     // Declare usable variables

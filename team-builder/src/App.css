@@ -1,38 +1,47 @@
-.App {
+/* General Styles */
+* {
   text-align: center;
+  font-size: 62.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3 {
+  font-family: 'Bubblegum Sans', cursive;
+}
+h1 {
+  font-size: 3.6rem;
+}
+h2 {
+  font-size: 2.9rem;
+}
+h3 {
+  font-size: 2.4rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body, label {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.6rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+form, input, select {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2rem;
 }
 
-.App-link {
-  color: #61dafb;
+/* Specific Styles */
+.App {
+  margin: 1%;
+}
+.form {
+  padding: 1%;
+}
+.member {
+  padding: 1%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App h1 {
+  text-shadow: 3px 3px 2px grey;
+  padding: 1%;
+}
+.App h3 {
+  padding: 0.5%;
 }

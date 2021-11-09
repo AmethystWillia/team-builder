@@ -1,0 +1,32 @@
+.form-container {
+    padding: 1%;
+    margin: 1% auto;
+
+    border: 2px solid black;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+
+    width: 60%;
+}
+
+.inputs {
+    margin: 1%;
+
+    display: flex;
+    flex-flow: column wrap;
+    width: 95%;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+input, select {
+    height: 1.8rem;
+    width: 70%;
+    margin: 0.5%;
+}

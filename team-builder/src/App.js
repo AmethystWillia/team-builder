@@ -1,7 +1,10 @@
 // Imports
 import React, { useState, useEffect } from 'react';
-import './App.css';
 import axios from './Fake Axios/index';
+
+// Import CSS
+import './App.css';
+import './index.css'
 
 // Import components
 import Team from './Components/Team';
@@ -63,22 +66,25 @@ function App() {
   // Return to render
   return (
     <div className="App">
-      <h1>Form App</h1>
-      <h3>Fill in the form to generate a Miitopia character!</h3>
-      <TeamForm values={formValues}
-      update={updateForm}
-      submit={submitForm}
-      />
-
-      {
-        members.map(mem => {
-          return (
-            <Team key={mem.id}
-            details={mem}
-            />
-          )
-        })
-      }
+      <div className='form'>
+        <h1>Form App</h1>
+        <h3>Fill in the form to generate a Miitopia character!</h3>
+        <TeamForm values={formValues}
+        update={updateForm}
+        submit={submitForm}
+        />
+      </div>
+      <div className='member'>
+        {
+          members.map(mem => {
+            return (
+              <Team key={mem.id}
+              details={mem}
+              />
+            )
+          })
+        }
+      </div>
     </div>
   );
 }
